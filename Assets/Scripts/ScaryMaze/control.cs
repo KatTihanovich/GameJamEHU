@@ -2,14 +2,13 @@ using UnityEngine;
 using UnityEngine.UI; // For UI elements
 using System.Collections; // For using coroutines
 
-public class Control : MonoBehaviour
+public class control : MonoBehaviour
 {
     public GameObject warningImage; // Panel for warning message (optional)
     public GameObject restartPanel; // Panel for restart message (shown on collision)
     public AudioClip warningSound; // Sound for warning
     public float cursorRadius = 0.1f; // Radius for collision detection
     private bool isShowingRestartPanel = false; // To prevent showing multiple restart panels
-
 
     private void Start()
     {
@@ -26,7 +25,6 @@ public class Control : MonoBehaviour
         {
             restartPanel.SetActive(false);
         }
-
 
         // Start showing periodic warning after random intervals
         StartCoroutine(ShowWarningPeriodically());
@@ -46,11 +44,11 @@ public class Control : MonoBehaviour
         transform.position = targetPosition;
     }
 
-    // Detect collision using BoxCollider
-    private void OnTriggerEnter2D(Collider2D collision)
+    // Detect when the cursor exits the collider zone
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Trigger entered with: ");
-        // When the player collides with a wall, show the restart panel
+        Debug.Log("Trigger exited with: ");
+        // When the cursor leaves the collider zone, show the restart panel
         if (!isShowingRestartPanel)
         {
             ShowRestartPanel();
@@ -89,7 +87,7 @@ public class Control : MonoBehaviour
         }
     }
 
-    // Show the restart panel when a collision occurs
+    // Show the restart panel when a collision occurs or when the cursor leaves the collider zone
     private void ShowRestartPanel()
     {
         isShowingRestartPanel = true;
