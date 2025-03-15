@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BUNNY_00_0: 1085529793706717419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
