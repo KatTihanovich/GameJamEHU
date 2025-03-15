@@ -4,37 +4,37 @@ using System.Collections; // For using coroutines
 
 public class Control : MonoBehaviour
 {
-    public GameObject warningImage; // Panel for warning message
-    public GameObject restartPanel; // Panel for restart message
-    public GameObject finishObject; // The object that triggers the finish animation
+    public GameObject warningImage; // Panel for warning message (optional)
+    public GameObject restartPanel; // Panel for restart message (shown on collision)
     public AudioClip warningSound; // Sound for warning
     public float cursorRadius = 0.1f; // Radius for collision detection
+    private bool isShowingRestartPanel = false; // To prevent showing multiple restart panels
 
-    public Animator finishAnimator; // Animator for the finish animation
 
-    private bool isShowingRestartPanel = false; // Prevent duplicate restart panels
-    private bool isFinishTriggered = false; // Ensure finish animation plays once
-    private Vector3 startPosition; // Store the starting position of the cursor
-
-    void Start()
+    private void Start()
     {
         // Hide system cursor
         Cursor.visible = false;
 
         // Hide both panels initially
-        if (warningImage != null) warningImage.SetActive(false);
-        if (restartPanel != null) restartPanel.SetActive(false);
+        if (warningImage != null)
+        {
+            warningImage.SetActive(false);
+        }
 
-        // Store the starting position for the cursor
-        startPosition = transform.position;
+        if (restartPanel != null)
+        {
+            restartPanel.SetActive(false);
+        }
+
 
         // Start showing periodic warning after random intervals
         StartCoroutine(ShowWarningPeriodically());
     }
 
-    void Update()
+    private void Update()
     {
-        // Check for collision with walls (use Physics2D.OverlapCircle if you're in 2D)
+        // Check for collision with walls (using box collider)
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = Camera.main.nearClipPlane;
 
@@ -42,92 +42,81 @@ public class Control : MonoBehaviour
         Vector3 targetPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         targetPosition.z = 0; // Keep cursor in 2D space
 
-        // Move the cursor if no collision
-        if (!Physics.CheckSphere(targetPosition, cursorRadius))
-        {
-            transform.position = targetPosition;
-        }
-        else if (!isShowingRestartPanel) // If collision with walls, show restart panel
+        // Move the cursor
+        transform.position = targetPosition;
+    }
+
+    // Detect collision using BoxCollider
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Trigger entered with: ");
+        // When the player collides with a wall, show the restart panel
+        if (!isShowingRestartPanel)
         {
             ShowRestartPanel();
-        }
-
-        // Check collision with the finish object
-        if (finishObject != null && !isFinishTriggered)
-        {
-            float distanceToFinish = Vector3.Distance(transform.position, finishObject.transform.position);
-            if (distanceToFinish < cursorRadius)
-            {
-                TriggerFinishAnimation();
-            }
         }
     }
 
     // Coroutine to show a warning periodically after a random time (4-10 seconds)
-    IEnumerator ShowWarningPeriodically()
+    private IEnumerator ShowWarningPeriodically()
     {
         while (true)
         {
+            // Wait for a random time between 4 and 10 seconds
             float randomTime = Random.Range(4f, 10f);
             yield return new WaitForSeconds(randomTime);
 
-            if (warningImage != null) warningImage.SetActive(true);
+            // Show the warning image (if assigned)
+            if (warningImage != null)
+            {
+                warningImage.SetActive(true);
+            }
 
+            // Play the warning sound (if assigned)
             if (warningSound != null)
             {
                 AudioSource.PlayClipAtPoint(warningSound, Camera.main.transform.position);
             }
 
+            // Wait for 1 second before hiding the warning
             yield return new WaitForSeconds(1f);
 
-            if (warningImage != null) warningImage.SetActive(false);
+            // Hide the warning image after the duration
+            if (warningImage != null)
+            {
+                warningImage.SetActive(false);
+            }
         }
     }
 
     // Show the restart panel when a collision occurs
-    void ShowRestartPanel()
+    private void ShowRestartPanel()
     {
         isShowingRestartPanel = true;
 
-        if (restartPanel != null) restartPanel.SetActive(true);
-
-        Time.timeScale = 0f; // Pause the game
-    }
-
-    // Trigger the finish animation when cursor collides with the finish object
-    void TriggerFinishAnimation()
-    {
-        isFinishTriggered = true;
-
-        if (finishAnimator != null)
+        // Show the restart panel
+        if (restartPanel != null)
         {
-            finishAnimator.SetTrigger("PlayFinish");
+            restartPanel.SetActive(true);
         }
 
-        // Optionally, you could delay further actions until the animation finishes
-        StartCoroutine(EndGameAfterAnimation());
+        // Pause the game
+        Time.timeScale = 0f;
+
+        // Optional: You could add a restart button in the restart panel for the player to restart manually
     }
 
-    // Wait for the finish animation to complete before taking further actions
-    IEnumerator EndGameAfterAnimation()
-    {
-        yield return new WaitForSeconds(finishAnimator.GetCurrentAnimatorStateInfo(0).length);
-
-        // Example: Display a win screen or transition
-        Debug.Log("Finish Animation Complete!");
-    }
-
-    // Method to restart the game (called by a UI button)
+    // Method to restart the game (you can call this on a restart button click)
     public void RestartGame()
     {
         Time.timeScale = 1f; // Resume the game
-        transform.position = startPosition; // Reset cursor position
-
-        if (restartPanel != null) restartPanel.SetActive(false);
+        if (restartPanel != null)
+        {
+            restartPanel.SetActive(false); // Hide the restart panel
+        }
         isShowingRestartPanel = false;
-        isFinishTriggered = false;
 
         // Optionally reset the game state or reload the scene
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Uncomment if you want to reload the scene
     }
 }

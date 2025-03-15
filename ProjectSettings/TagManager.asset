@@ -9,6 +9,7 @@ TagManager:
   - FinishLine
   - spike
   - finish
+  - Wall
   layers:
   - Default
   - TransparentFX
