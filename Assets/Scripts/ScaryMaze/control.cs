@@ -9,6 +9,7 @@ public class control : MonoBehaviour
     public AudioClip warningSound; // Sound for warning
     public float cursorRadius = 0.1f; // Radius for collision detection
     private bool isShowingRestartPanel = false; // To prevent showing multiple restart panels
+    public GameObject anim;
 
     private void Start()
     {
@@ -52,6 +53,14 @@ public class control : MonoBehaviour
         if (!isShowingRestartPanel)
         {
             ShowRestartPanel();
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("finish") && !isShowingRestartPanel)
+        {
+            ShowRestartPanel();
+            anim.SetActive(true);
         }
     }
 
