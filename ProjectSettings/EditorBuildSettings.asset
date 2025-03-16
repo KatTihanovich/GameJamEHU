@@ -35,6 +35,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 92833d0ae96194997b4da1adc1003027
+  - enabled: 1
+    path: Assets/Scenes/CatSceneEnd.unity
+    guid: 49d0e24a3a51b3b4ab5154a48653b10f
+  - enabled: 1
+    path: Assets/Scenes/VideoVirusScene.unity
+    guid: 76665e3a89a34dd428634bc80960be17
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: a0b5a9bc51c6fcb44a2bee66657f8a7f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

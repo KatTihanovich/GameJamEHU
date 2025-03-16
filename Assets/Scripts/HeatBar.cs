@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class HeatBar : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class HeatBar : MonoBehaviour
     [SerializeField]
     public static float maxHeat = 10f;  // Max heat level
     [SerializeField]
-    private static float currentHeat = 6f;  // Current heat value
+    private static float currentHeat = 7f;  // Current heat value
 
     void Awake()
     {
@@ -24,7 +26,7 @@ public static float GetCurrentHeat()
     {
         return currentHeat;
     }
-    
+
     // Increase Heat (Call when player loses)
     public static void IncreaseHeat(float amount)
     {
@@ -34,7 +36,8 @@ public static float GetCurrentHeat()
 
         if (currentHeat >= maxHeat)
         {
-            GameOver();
+             SceneManager.LoadScene("CatSceneEnd");
+            //GameOver();
         }
     }
 
