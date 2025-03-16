@@ -481,7 +481,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Congrats! \nYou successfully deleted virus! "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 41315062992374847b184b5328b3386e, type: 2}
   m_sharedMaterial: {fileID: 9180734276415440022, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &122232166
@@ -617,7 +617,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Oh no! \nVirus is progressing... "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 41315062992374847b184b5328b3386e, type: 2}
   m_sharedMaterial: {fileID: 9180734276415440022, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -683,7 +683,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &205249214
@@ -907,8 +907,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Time: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
-  m_sharedMaterial: {fileID: 9180734276415440022, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 41315062992374847b184b5328b3386e, type: 2}
+  m_sharedMaterial: {fileID: 3863500760797408775, guid: 41315062992374847b184b5328b3386e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1177,7 +1177,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Go Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 41315062992374847b184b5328b3386e, type: 2}
   m_sharedMaterial: {fileID: 9180734276415440022, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1243,7 +1243,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &467529017
@@ -1313,7 +1313,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Try Again
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 41315062992374847b184b5328b3386e, type: 2}
   m_sharedMaterial: {fileID: 9180734276415440022, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1379,7 +1379,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &536153078
@@ -1582,7 +1582,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Go Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 41315062992374847b184b5328b3386e, type: 2}
   m_sharedMaterial: {fileID: 9180734276415440022, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1648,7 +1648,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &780070017
@@ -3258,8 +3258,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: space to jump
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
-  m_sharedMaterial: {fileID: 9180734276415440022, guid: 35f4f6b0c171a47388bef46bb18763e3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 41315062992374847b184b5328b3386e, type: 2}
+  m_sharedMaterial: {fileID: 3863500760797408775, guid: 41315062992374847b184b5328b3386e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
