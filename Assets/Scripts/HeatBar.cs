@@ -20,6 +20,11 @@ public class HeatBar : MonoBehaviour
         heatSlider.value = currentHeat;
     }
 
+public static float GetCurrentHeat()
+    {
+        return currentHeat;
+    }
+    
     // Increase Heat (Call when player loses)
     public static void IncreaseHeat(float amount)
     {

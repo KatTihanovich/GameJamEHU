@@ -76,9 +76,12 @@ public class EmailManager : MonoBehaviour
             {
                 targetEmailDeleted = true;
                 float timeTaken = Time.time - startTime;
+                HeatBar.DecreaseHeat(1f);
                 Debug.Log("Время удаления нужного письма: " + timeTaken + " секунд");
-            }
-            
+            } 
+            else{     
+                       HeatBar.IncreaseHeat(1f); 
+                }
             // Переключение на другое письмо
             SwitchToAnotherEmail(index);
         }
