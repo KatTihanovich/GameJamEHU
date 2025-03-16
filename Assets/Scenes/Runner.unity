@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 60967484}
   - component: {fileID: 60967483}
   - component: {fileID: 60967486}
+  - component: {fileID: 60967487}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -403,6 +404,23 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &60967487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60967482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f6d840a40961949b9da65308f14675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScene: Desktop
+  runnerScene: Runner
+  scaryMazeScene: ScaryMaze
+  antiVirusWindowScene: AntyvirusWindow
+  exitButton: {fileID: 1984313537}
 --- !u!1 &298482543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,7 +1532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8436767462318165357, guid: dc12f5d589e2a448b93b4d65831f2b2c, type: 3}
+  m_Sprite: {fileID: 8436767462318165357, guid: 8696b93a65e5bd448aa78cd225becc29, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1660,7 +1678,7 @@ Transform:
   m_GameObject: {fileID: 1791859567}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.31, y: -0.89, z: 0}
+  m_LocalPosition: {x: 0.54, y: -0.89, z: 0}
   m_LocalScale: {x: 0.23890428, y: 1.4703134, z: 0.4726}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1906,8 +1924,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
+    m_PressedColor: {r: 0.4392157, g: 0.43529412, b: 0.43529412, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1948,7 +1966,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5248415023898783801, guid: 28e5450c850824fd585db566a4d3461c, type: 3}
+  m_Sprite: {fileID: 7271959875528500212, guid: 028d49115954d2845ace731cbde8c2ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1975,7 +1993,7 @@ Transform:
   m_GameObject: {fileID: 8605202906351556622}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.6, y: -1.06, z: 0}
+  m_LocalPosition: {x: 6.79, y: -1.06, z: 0}
   m_LocalScale: {x: 0.3558926, y: 1.1106026, z: 0.4726}
   m_ConstrainProportionsScale: 0
   m_Children: []

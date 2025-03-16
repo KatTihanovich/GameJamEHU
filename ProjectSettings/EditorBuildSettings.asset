@@ -14,6 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Desktop.unity
     guid: 943b10adb2e642045a7fba830367b0d0
+  - enabled: 1
+    path: Assets/Scenes/AntyvirusWindow.unity
+    guid: 9c2a4ea273c3d488db8d3c202781f4da
+  - enabled: 1
+    path: Assets/Scenes/Runner.unity
+    guid: bd90cf2f90cc54370a3b19c17efbe74d
+  - enabled: 1
+    path: Assets/Scenes/ScaryMaze.unity
+    guid: 1a0a6e8105a4c43198983b865470db2a
+  - enabled: 1
+    path: Assets/Scenes/TaskManager.unity
+    guid: 09ccd1abc95c7d74c91b6b8a28a9d853
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
