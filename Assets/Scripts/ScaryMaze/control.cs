@@ -6,6 +6,7 @@ public class control : MonoBehaviour
 {
     public GameObject warningImage; // Panel for warning message (optional)
     public GameObject restartPanel; // Panel for restart message (shown on collision)
+    public GameObject winCanvas;
     public AudioClip warningSound; // Sound for warning
     public float cursorRadius = 0.1f; // Radius for collision detection
     private bool isShowingRestartPanel = false; // To prevent showing multiple restart panels
@@ -53,14 +54,15 @@ public class control : MonoBehaviour
         if (!isShowingRestartPanel)
         {
             ShowRestartPanel();
+            HeatBar.IncreaseHeat(3f);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("finish") && !isShowingRestartPanel)
         {
-            ShowRestartPanel();
-            anim.SetActive(true);
+            HeatBar.DecreaseHeat(3f);
+            ShowWinCanvas();
         }
     }
 
@@ -111,6 +113,12 @@ public class control : MonoBehaviour
         Time.timeScale = 0f;
 
         // Optional: You could add a restart button in the restart panel for the player to restart manually
+    }
+
+    private void ShowWinCanvas()
+    {
+        winCanvas.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     // Method to restart the game (you can call this on a restart button click)
