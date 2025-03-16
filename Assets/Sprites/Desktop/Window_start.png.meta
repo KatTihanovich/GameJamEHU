@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b239292b922a0411e9bf48197c61052d
+guid: 4935fa410b3b2ab41a613da94a9d3c85
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6989737918120733384
-    second: Runner_obsticle_1_0
+      213: -4022832662732691184
+    second: Window_start_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Runner_obsticle_1_0
+      name: Window_start_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 0
-        width: 954
-        height: 1080
+        x: 24
+        y: 43
+        width: 1042
+        height: 456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ca2aa27a99800160800000000000000
-      internalID: 6989737918120733384
+      spriteID: 019aaf2d1070c28c0800000000000000
+      internalID: -4022832662732691184
       vertices: []
       indices: 
       edges: []
@@ -160,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Runner_obsticle_1_0: 6989737918120733384
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
