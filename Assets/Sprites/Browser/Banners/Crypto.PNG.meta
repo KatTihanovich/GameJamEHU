@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a8de68cb7231afe4c8e8c6ea83029b62
+guid: 48a5c9099c075ba4093901914fad6026
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3317557048200009643
-    second: INTORNETEXPLORAR3_0
+      213: -7547026565007975865
+    second: Crypto_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: INTORNETEXPLORAR3_0
+      name: Crypto_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 852
-        height: 480
+        y: 341
+        width: 480
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 558e1fb117ba5f1d0800000000000000
-      internalID: -3317557048200009643
+      spriteID: 74a53423353934790800000000000000
+      internalID: -7547026565007975865
       vertices: []
       indices: 
       edges: []

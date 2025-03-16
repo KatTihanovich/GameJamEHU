@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cb5f669cb0296b44fa4863fec4a1719a
+guid: 05dfa6468cb809446b143d9cfe8d6dcb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8065419102562287977
-    second: Vkladka_0
+      213: -315434385440615491
+    second: Clipped file_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Vkladka_0
+      name: Clipped file_0
       rect:
         serializedVersion: 2
-        x: 271
-        y: 417
-        width: 87
-        height: 24
+        x: 0
+        y: 0
+        width: 207
+        height: 290
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79eff130f00e11090800000000000000
-      internalID: -8065419102562287977
+      spriteID: db35ed1091a5f9bf0800000000000000
+      internalID: -315434385440615491
       vertices: []
       indices: 
       edges: []
