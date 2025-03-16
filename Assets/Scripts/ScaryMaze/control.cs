@@ -10,7 +10,6 @@ public class control : MonoBehaviour
     public AudioClip warningSound; // Sound for warning
     public float cursorRadius = 0.1f; // Radius for collision detection
     private bool isShowingRestartPanel = false; // To prevent showing multiple restart panels
-    public GameObject anim;
 
     private void Start()
     {
@@ -26,6 +25,11 @@ public class control : MonoBehaviour
         if (restartPanel != null)
         {
             restartPanel.SetActive(false);
+        }
+
+        if (winCanvas != null)
+        {
+            winCanvas.SetActive(false);
         }
 
         // Start showing periodic warning after random intervals
@@ -47,22 +51,31 @@ public class control : MonoBehaviour
     }
 
     // Detect when the cursor exits the collider zone
-    private void OnTriggerExit2D(Collider2D collision)
+    // private void OnTriggerExit2D(Collider2D collision)
+    // {
+    //     Debug.Log("Trigger exited with: ");
+    //     // When the cursor leaves the collider zone, show the restart panel
+    //     if (!isShowingRestartPanel)
+    //     {
+    //         ShowRestartPanel();
+    //         HeatBar.IncreaseHeat(3f);
+    //     }
+    // }
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger exited with: ");
-        // When the cursor leaves the collider zone, show the restart panel
+        if (collision.CompareTag("finish"))
+    {
+        HeatBar.DecreaseHeat(3f);
+        Cursor.visible = true;
+        winCanvas.SetActive(true);
+        Time.timeScale = 0f;
+        return; // Exit to prevent showing the restart panel
+    }
+
         if (!isShowingRestartPanel)
         {
             ShowRestartPanel();
             HeatBar.IncreaseHeat(3f);
-        }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("finish") && !isShowingRestartPanel)
-        {
-            HeatBar.DecreaseHeat(3f);
-            ShowWinCanvas();
         }
     }
 
@@ -101,6 +114,7 @@ public class control : MonoBehaviour
     // Show the restart panel when a collision occurs or when the cursor leaves the collider zone
     private void ShowRestartPanel()
     {
+        Cursor.visible = true;
         isShowingRestartPanel = true;
 
         // Show the restart panel
@@ -115,11 +129,12 @@ public class control : MonoBehaviour
         // Optional: You could add a restart button in the restart panel for the player to restart manually
     }
 
-    private void ShowWinCanvas()
-    {
-        winCanvas.SetActive(true);
-        Time.timeScale = 0f;
-    }
+    // private void ShowWinCanvas()
+    // {
+    //     Cursor.visible = true;
+    //     winCanvas.SetActive(true);
+    //     Time.timeScale = 0f;
+    // }
 
     // Method to restart the game (you can call this on a restart button click)
     public void RestartGame()
@@ -128,6 +143,7 @@ public class control : MonoBehaviour
         if (restartPanel != null)
         {
             restartPanel.SetActive(false); // Hide the restart panel
+            Cursor.visible = false;
         }
         isShowingRestartPanel = false;
 
