@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 76430427}
   - component: {fileID: 76430426}
   - component: {fileID: 76430425}
+  - component: {fileID: 76430428}
   m_Layer: 5
   m_Name: Cross button
   m_TagString: Untagged
@@ -239,6 +240,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76430423}
   m_CullTransparentMesh: 1
+--- !u!114 &76430428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76430423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f6d840a40961949b9da65308f14675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScene: Desktop
+  runnerScene: Runner
+  scaryMazeScene: ScaryMaze
+  antiVirusWindowScene: AntyvirusWindow
+  taskManagerScene: TaskManager
+  exitButton: {fileID: 0}
 --- !u!1 &94050248
 GameObject:
   m_ObjectHideFlags: 0
