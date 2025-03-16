@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MadameBubble_0: -674720184514279856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

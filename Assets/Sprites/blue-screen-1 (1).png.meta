@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blue-screen-1 (1)_0: -7581041725140132276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

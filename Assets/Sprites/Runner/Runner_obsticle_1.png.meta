@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Runner_obsticle_1_0: 6989737918120733384
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
