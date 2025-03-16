@@ -42,4 +42,9 @@ public class ExitButton : MonoBehaviour
     {
         SceneManager.LoadScene(taskManagerScene);
     }
+    public static void RestartGame()
+    {
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

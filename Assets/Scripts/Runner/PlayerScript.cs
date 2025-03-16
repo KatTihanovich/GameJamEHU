@@ -39,6 +39,7 @@ public class PlayerScript : MonoBehaviour
         {
             winScreen.SetActive(true);
             Time.timeScale = 0f;
+            HeatBar.DecreaseHeat(3f);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -56,6 +57,7 @@ public class PlayerScript : MonoBehaviour
             isAlive = false;
             Time.timeScale = 0f;
             loseScreen.SetActive(true);
+            HeatBar.IncreaseHeat(3f);
         }
     }
 }
