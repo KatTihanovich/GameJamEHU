@@ -1,0 +1,67 @@
+{
+"skeleton": {
+	"hash": "XuP7sPC57gLFH3q7iQG1yB+AzeM",
+	"spine": "3.8",
+	"x": -48,
+	"y": -7,
+	"width": 105,
+	"height": 154,
+	"images": "",
+	"audio": "C:/Users/temus/Documents/Sai&Ph/Анимация/Spine/Korzina"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "korzina", "parent": "root", "x": -0.6, "y": 45.47 },
+	{ "name": "file", "parent": "korzina", "x": 1.8, "y": 57.09 }
+],
+"slots": [
+	{ "name": "Bin", "bone": "korzina", "attachment": "Bin" },
+	{ "name": "file 2", "bone": "file", "attachment": "file 2" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"file 2": {
+				"file 2": { "x": 1.8, "y": 4.43, "width": 52, "height": 80 }
+			},
+			"Bin": {
+				"Bin": { "x": 5.1, "y": 5.03, "width": 105, "height": 115 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"file": {
+				"translate": [
+					{ "y": -35.49, "curve": 0.309, "c2": 0.04, "c3": 0.832, "c4": 0.74 },
+					{ "time": 0.3333, "y": 32.95 },
+					{
+						"time": 0.6667,
+						"x": 0.85,
+						"y": 22.82,
+						"curve": 0.303,
+						"c2": 0.81,
+						"c3": 0.823,
+						"c4": 0.98
+					},
+					{ "time": 0.8333, "x": 4.03, "y": -15.21 }
+				],
+				"scale": [
+					{ "curve": 0.309, "c2": 0.04, "c3": 0.832, "c4": 0.74 },
+					{ "time": 0.3333, "y": 0.611 },
+					{ "time": 0.6667, "curve": 0.303, "c2": 0.81, "c3": 0.823, "c4": 0.98 },
+					{ "time": 0.8333, "y": 0 }
+				],
+				"shear": [
+					{ "curve": 0.309, "c2": 0.04, "c3": 0.832, "c4": 0.74 },
+					{ "time": 0.3333, "y": -37.05 },
+					{ "time": 0.6667, "y": -175.21 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,20 @@
+
+Korzina.png
+size: 173,109
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bin
+  rotate: true
+  xy: 2, 2
+  size: 105, 115
+  orig: 105, 115
+  offset: 0, 0
+  index: -1
+file 2
+  rotate: false
+  xy: 119, 27
+  size: 52, 80
+  orig: 52, 80
+  offset: 0, 0
+  index: -1
