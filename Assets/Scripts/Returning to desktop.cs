@@ -9,6 +9,7 @@ public class ExitButton : MonoBehaviour
     public string scaryMazeScene = "ScaryMaze";
     public string antiVirusWindowScene = "AntyvirusWindow";
     public string taskManagerScene = "TaskManager";
+    public string winScene = "Win";
     public Button exitButton;
 
     void Start()
@@ -42,9 +43,15 @@ public class ExitButton : MonoBehaviour
     {
         SceneManager.LoadScene(taskManagerScene);
     }
+    public void GoToTaskWin()
+    {
+        SceneManager.LoadScene(winScene);
+        Cursor.visible = true;
+    }
     public static void RestartGame()
     {
         Time.timeScale = 1f; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    
 }
