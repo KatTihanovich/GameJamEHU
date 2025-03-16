@@ -1,0 +1,111 @@
+
+Antivirus.png
+size: 285,400
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 223
+  size: 227, 175
+  orig: 227, 175
+  offset: 0, 0
+  index: -1
+Ear_L
+  rotate: false
+  xy: 231, 204
+  size: 46, 67
+  orig: 46, 67
+  offset: 0, 0
+  index: -1
+Ear_R
+  rotate: true
+  xy: 2, 96
+  size: 46, 67
+  orig: 46, 67
+  offset: 0, 0
+  index: -1
+Eyes_L_1
+  rotate: true
+  xy: 71, 86
+  size: 56, 66
+  orig: 56, 66
+  offset: 0, 0
+  index: -1
+Eyes_L_2
+  rotate: false
+  xy: 136, 43
+  size: 56, 33
+  orig: 56, 33
+  offset: 0, 0
+  index: -1
+Eyes_L_3
+  rotate: false
+  xy: 139, 78
+  size: 61, 64
+  orig: 61, 64
+  offset: 0, 0
+  index: -1
+Eyes_L_4
+  rotate: false
+  xy: 231, 300
+  size: 51, 48
+  orig: 51, 48
+  offset: 0, 0
+  index: -1
+Eyes_R_1
+  rotate: true
+  xy: 2, 38
+  size: 56, 66
+  orig: 56, 66
+  offset: 0, 0
+  index: -1
+Eyes_R_2
+  rotate: false
+  xy: 136, 8
+  size: 56, 33
+  orig: 56, 33
+  offset: 0, 0
+  index: -1
+Eyes_R_3
+  rotate: true
+  xy: 70, 23
+  size: 61, 64
+  orig: 61, 64
+  offset: 0, 0
+  index: -1
+Eyes_R_4
+  rotate: false
+  xy: 231, 350
+  size: 52, 48
+  orig: 52, 48
+  offset: 0, 0
+  index: -1
+Hand_L
+  rotate: true
+  xy: 2, 144
+  size: 77, 199
+  orig: 77, 199
+  offset: 0, 0
+  index: -1
+Hand_R
+  rotate: false
+  xy: 203, 3
+  size: 77, 199
+  orig: 77, 199
+  offset: 0, 0
+  index: -1
+Mouth_1
+  rotate: true
+  xy: 2, 2
+  size: 34, 38
+  orig: 34, 38
+  offset: 0, 0
+  index: -1
+Mouth_2
+  rotate: false
+  xy: 231, 273
+  size: 48, 25
+  orig: 48, 25
+  offset: 0, 0
+  index: -1
